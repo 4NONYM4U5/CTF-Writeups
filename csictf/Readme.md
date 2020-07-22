@@ -4,7 +4,7 @@
 ```
 [Put the description here]
 
-File : global-warming: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, BuildID[sha1]=a8349c997968a84bfa8b253e0f9a3f9349cc1538, for GNU/Linux 3.2.0, not stripped
+File : global-warming: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2,\n BuildID[sha1]=a8349c997968a84bfa8b253e0f9a3f9349cc1538, for GNU/Linux 3.2.0, not stripped
 
 Checksec : Arch:     i386-32-little
            RELRO:    Partial RELRO

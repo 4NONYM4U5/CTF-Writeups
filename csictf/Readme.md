@@ -1,4 +1,4 @@
-# Writeup for Global Warming (Pwn) Challenge`
+# Writeup for Global Warming (Pwn) Challenge
 
 ### Info
 ```
@@ -52,4 +52,6 @@ int login(int a1, char *our_input)
 By this we get to know that our input is at the offset 12. We can build a format string payload with the help of pwntools. So we need to overwrite the `admin` variable with `0xB4DBABE3` we can do that by exploiting the format string bug.<br>
  ```payload = fmtstr_payload(12, {exe.symbols['admin'] : p64(0xB4DBABE3)}, write_size='short')```    
 <br>
+![imgbb](https://i.ibb.co/Xkyqf6w/p2.jpg)
+`FLAG : csictf{n0_5tr1ng5_@tt@ch3d}`
  For complete solution look at exploit.py .

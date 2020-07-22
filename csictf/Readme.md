@@ -47,5 +47,5 @@ int login(int a1, char *our_input)
 
 # Exploit
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Exploit](https://imgur.com/a/3y6f1RX)
 So we need to overwrite the `admin` variable with `0xB4DBABE3` we can do that by exploiting the format string bug. For solution look at exploit.py.

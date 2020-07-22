@@ -47,5 +47,5 @@ int login(int a1, char *our_input)
 
 # Exploit
 
-![Exploit](https://imgur.com/a/3y6f1RX)
+![Exploit](https://ibb.co/nzhzqHd)
 So we need to overwrite the `admin` variable with `0xB4DBABE3` we can do that by exploiting the format string bug. For solution look at exploit.py.

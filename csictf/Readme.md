@@ -50,6 +50,6 @@ int login(int a1, char *our_input)
 
 ![imgbb](https://i.ibb.co/Ypvp4zn/p1.jpg)
 By this we get to know that our input is at the offset 12. We can build a format string payload with the help of pwntools. So we need to overwrite the `admin` variable with `0xB4DBABE3` we can do that by exploiting the format string bug.<br>
-    payload = fmtstr_payload(12, {exe.symbols['admin'] : p64(0xB4DBABE3)}, write_size='short')    
+ ```payload = fmtstr_payload(12, {exe.symbols['admin'] : p64(0xB4DBABE3)}, write_size='short')```    
 <br>
  For complete solution look at exploit.py .

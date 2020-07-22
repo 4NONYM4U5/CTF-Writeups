@@ -31,7 +31,7 @@ int main(int argc, const char **argv, const char **envp)
 
 The main takes 1024 bytes of stdin and calls login with our input.
 
-```python
+```C
 int login(int a1, char *our_input)
 {
   int result; // eax

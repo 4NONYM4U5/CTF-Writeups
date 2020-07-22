@@ -14,6 +14,7 @@ Checksec : Arch:     i386-32-little
 ```
 ### Analysis
 
+The main takes 1024 bytes of stdin and calls login with our input.
 ```C
 int main(int argc, const char **argv, const char **envp)
 {
@@ -30,7 +31,7 @@ int main(int argc, const char **argv, const char **envp)
 }
 ```
 
-The main takes 1024 bytes of stdin and calls login with our input.
+The function login() is called with our_input as a parameter.
 
 ```C
 int login(int a1, char *our_input)
@@ -48,5 +49,7 @@ int login(int a1, char *our_input)
 
 ### Exploit
 
-![Exploit](https://i.ibb.co/Ypvp4zn/p1.jpg)
-So we need to overwrite the `admin` variable with `0xB4DBABE3` we can do that by exploiting the format string bug. For solution look at exploit.py.
+![imgbb](https://i.ibb.co/Ypvp4zn/p1.jpg)
+By this we get to know that our input is at the offset 12. We can build a format string payload with the help of pwntools.So we need to overwrite the `admin` variable with `0xB4DBABE3` we can do that by exploiting the format string bug.
+`python payload = fmtstr_payload(12, {exe.symbols['admin'] : p64(0xB4DBABE3)}, write_size='short')`
+ For complete solution look at exploit.py .

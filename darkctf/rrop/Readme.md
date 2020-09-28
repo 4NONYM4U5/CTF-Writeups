@@ -158,6 +158,15 @@ setup_execve = flat([
 ])
 ```
 
+Breakpoint at syscall
+![imgbb](https://i.ibb.co/YDycy8R/lucky.png)
+
+<br>
+We can see that the RDX is already NuLL. I did not notice this during the CTF and i used __ret2csu__ to control RDX. It is a cool technique. You can find detailed explaination on ret2csu here :- <br>
+Research paper : https://i.blackhat.com/briefings/asia/2018/asia-18-Marco-return-to-csu-a-new-method-to-bypass-the-64-bit-Linux-ASLR-wp.pdf
+Youtube video  : https://www.youtube.com/watch?v=mPbHroMVepM
+Practise Challenge : https://ropemporium.com/challenge/ret2csu.html
+
 The complete exploit script.
 ```python
 #!/usr/bin/python
@@ -230,7 +239,7 @@ io.interactive()
 ![imgbb](https://i.ibb.co/LnyD0n8/shell.png)<br>
 `Flag : darkCTF{f1n4lly_y0u_f4k3_s1gn4l_fr4m3_4nd_w0n_gr4n173_w1r3d_m4ch1n3}`<br>
 ![imgbb](https://i.ibb.co/Wkdgytk/jIk1rJT.jpg)<br>
-This is when i realised that i solved this challenge in an Unintended way. Anyways i liked the challenge and the CTF was really good Kudos to team Dark Army. My team Zh3r0 ranked 4th in the CTF. <br>
+This is when i realised that i solved the challenge in an Unintended way. Anyways i liked the challenge and the CTF was really good Kudos to team Dark Army. My team Zh3r0 ranked 4th in the CTF. <br>
 Zh3r0 : https://ctftime.org/team/116018<br>
 Dark Army : https://ctftime.org/team/26569<br>
 Dark CTF : https://ctftime.org/event/1118<br>

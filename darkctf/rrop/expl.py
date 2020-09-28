@@ -37,8 +37,7 @@ continue
 
 # -- Exploit goes here --
 
-io = remote('rrop.darkarmy.xyz', '7001')
-
+io = start()
 pop_rdi = 0x00000000004008b3
 ret = 0x00000000004005b6
 

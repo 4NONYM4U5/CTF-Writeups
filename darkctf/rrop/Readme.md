@@ -229,8 +229,8 @@ io.interactive()
 ```
 ![imgbb](https://i.ibb.co/LnyD0n8/shell.png)<br>
 `Flag : darkCTF{f1n4lly_y0u_f4k3_s1gn4l_fr4m3_4nd_w0n_gr4n173_w1r3d_m4ch1n3}`<br>
-![imgbb](https://i.ibb.co/Wkdgytk/jIk1rJT.jpg)
+![imgbb](https://i.ibb.co/Wkdgytk/jIk1rJT.jpg)<br>
 Anyways i liked the challenge and the CTF was really good Kudos to team Dark Army. My team Zh3r0 ranked 4th in the CTF. <br>
-Zh3r0 : https://ctftime.org/team/116018
-Dark Army : https://ctftime.org/team/26569
-Dark CTF : https://ctftime.org/event/1118
+Zh3r0 : https://ctftime.org/team/116018<br>
+Dark Army : https://ctftime.org/team/26569<br>
+Dark CTF : https://ctftime.org/event/1118<br>
